@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+input[type=checkbox] {
+    margin: 0;
+}
+
+img {
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+input[type=submit] {
+    background-color: lightblue;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: darkblue;
+}
+
+.label-right {
+    margin-right: 12px;
+}
+
+
+
+.containerhome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.containershape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: left;
+    margin-top: 6px;
+    width: 600px;
+}
+
+.containershape>div {
+    display: flex;
+    position: relative;
+    height: 194px;
+}
+
+@media (max-width: 425px) {
+    .containershape {
+        width: 194px;
+    }
+
+    .containershape>div {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .containershape {
+        flex-direction: column;
+    }
+}
+
+.shapeimg {
+    position: relative;
+    z-index: 12;
+}
+
+.shapeinput {
+    position: absolute;
+    z-index: 13;
+    height: 26px;
+    width: 26px;
+}
+
+.shapename {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    z-index: 14;
+}
+
+
+
+.button {
+    background-color: lightgreen;
+    border: none;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: darkgreen;
+}
+
+
+
+.overlay {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.modalnext {
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, 0%);
+    z-index: 11;
+}
+
+.modalnext>input {
+    width: 100%;
+}
+
+.modalform {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, 0%);
+    z-index: 11;
+    background: white;
+    overflow: scroll;
+}
+
+.modalheader {
+    background: lightgreen;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.closebutton {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.closebutton:hover {
+    color: darkgreen;
+}
+
+
+
+.containerform {
+    background-color: #f2f2f2;
+    padding: 12px;
+}
+
+
+
+.col-15 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+
+.col-85 {
+    float: left;
+    width: 85%;
+    margin-top: 6px;
+}
+
+.col-35 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+}
+
+.col-65 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width: 425px) {
+
+    .col-15,
+    .col-85,
+    .col-35,
+    .col-65 {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+
+.containerstone {
+    display: flex;
+    background-color: black;
+    flex-flow: row wrap;
+}
+
+.containerstone>div {
+    background-color: DodgerBlue;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (max-width: 425px) {
+    .containerstone {
+        flex-direction: column;
+    }
+}
+
+.imgstone {
+    width: 194px;
+    height: 194px;
+    object-fit: cover;
+    object-position: 0% 100%;
+}
+
+
+
+.card {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: row;
+}
+
+.card>div {
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 425px) {
+    .card {
+        flex-direction: column;
+    }
+}
+
+
+
+.shapeitem {
+    position: relative;
+
+}
+
+.shapeitemimg {
+    position: relative;
+    z-index: 1;
+}
+
+.shapeitemlabel {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 4px;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+
+
+.containerbutton {
+    display: flex;
+}
+
+.containerbutton>button {
+    margin: 0 4px;
+}
